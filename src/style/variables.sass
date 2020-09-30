@@ -1,0 +1,87 @@
+//== Colors
+//
+//## Global colors definitions.
+
+//* Gray scale declarations
+$gray-base: #101c27
+$gray-dark: #3d4348
+$gray-light: #d8d8d8
+$gray-lighter: #e6edf4
+$gray-lightest: #f4f8fb
+$almost-white: #fdfdfd
+
+//* Color declarations
+$turquoise: #1fc59c
+$turquoise-light: #00ffac
+$green: #00a651
+$yellow: #ffd429
+$red: #e50038
+
+//* Branding colors assigment
+$brand-primary: $turquoise
+$brand-primary-light: $turquoise-light
+$brand-secondary: $brand-primary
+
+//* Global colors assigment
+$body-bg: white
+$text-color: $gray-base
+$link-color: $brand-primary
+$link-color-hover: lighten($link-color, 15%)
+
+//== Typography
+//
+//## Font, line-height, headings, and more.
+
+// Font families
+$font-family-serif: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif
+$font-family-sans-serif: 'Roboto', sans-serif
+$font-family-base: $font-family-sans-serif
+$font-family-headings: $font-family-sans-serif
+
+// Font sizes
+$font-size-xsmall: 12px
+$font-size-small: 14px
+$font-size-base: 16px
+$font-size-large: 24px
+
+// Line height and bottom margin
+$line-height-base: 26px
+$paragraphs-margin: $line-height-base
+
+// Font weights
+$thin: 200
+$regular: 300
+$bold: 500
+
+//== Media queries and breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min: 0
+
+// Small screen / tablet
+$screen-sm-min: 768px
+
+// Medium screen / desktop
+$screen-md-min: 1000px
+
+// Large screen / wide desktop
+$screen-lg-min: 1400px
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: $screen-sm-min - 1
+$screen-sm-max: $screen-md-min - 1
+$screen-md-max: $screen-lg-min - 1
+
+//== Page container
+//
+//## Configuration of a wrapping containers
+
+// Sidepaddings of a container on mobile devices
+$container-paddings: 15px
+
+// Maximum width of the containers
+$container: 1000px
+$container-narrow: 700px
+$container-wide: 1400px
